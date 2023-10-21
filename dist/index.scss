@@ -4,6 +4,13 @@ $white: #fff;
 
 @import './Menu/menu.scss';
 
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@400;600;700&display=swap');
+
+body {
+    font-family: 'Hind', sans-serif;
+}
+
+
 .dropdown-item a {
   text-decoration: none;
 }
