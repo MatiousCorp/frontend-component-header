@@ -3,13 +3,13 @@ $blue: #007db8;
 $white: #fff;
 
 @import './Menu/menu.scss';
+@import './studio-header/header.scss';
 
 @import url('https://fonts.googleapis.com/css2?family=Hind:wght@400;600;700&display=swap');
 
 body {
     font-family: 'Hind', sans-serif;
 }
-
 
 .dropdown-item a {
   text-decoration: none;
@@ -34,7 +34,7 @@ body {
 
 .learning-header {
   min-width: 0;
-  
+
   .course-title-lockup {
     min-width: 0;
 
