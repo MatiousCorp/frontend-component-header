@@ -87,7 +87,7 @@ const Header = ({ intl }) => {
       content: intl.formatMessage(messages['header.user.menu.register']),
     },
   ];
-
+  console.log('authenticatedUser', authenticatedUser);
   const props = {
     logo: config.LOGO_URL,
     logoAltText: config.SITE_NAME,

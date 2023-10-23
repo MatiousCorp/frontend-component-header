@@ -58,6 +58,7 @@ var Header = function Header(_ref) {
     href: "".concat(config.LMS_BASE_URL, "/register"),
     content: intl.formatMessage(messages['header.user.menu.register'])
   }];
+  console.log('authenticatedUser', authenticatedUser);
   var props = {
     logo: config.LOGO_URL,
     logoAltText: config.SITE_NAME,
