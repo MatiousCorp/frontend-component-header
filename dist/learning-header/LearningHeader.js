@@ -57,7 +57,7 @@ var LearningHeader = function LearningHeader(_ref2) {
   }, /*#__PURE__*/React.createElement("span", {
     className: "d-block m-0 font-weight-bold course-title"
   }, courseTitle)), showUserDropdown && authenticatedUser && /*#__PURE__*/React.createElement(AuthenticatedUserDropdown, {
-    username: authenticatedUser.username
+    username: authenticatedUser.name
   }), showUserDropdown && !authenticatedUser && /*#__PURE__*/React.createElement(AnonymousUserMenu, null)));
 };
 LearningHeader.propTypes = {
