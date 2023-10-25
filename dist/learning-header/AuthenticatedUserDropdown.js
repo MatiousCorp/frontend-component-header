@@ -8,6 +8,7 @@ import { Dropdown } from '@edx/paragon';
 import messages from './messages';
 var AuthenticatedUserDropdown = function AuthenticatedUserDropdown(_ref) {
   var intl = _ref.intl,
+    name = _ref.name,
     username = _ref.username;
   var dashboardMenuItem = /*#__PURE__*/React.createElement(Dropdown.Item, {
     href: "".concat(getConfig().LMS_BASE_URL, "/dashboard")
@@ -26,7 +27,7 @@ var AuthenticatedUserDropdown = function AuthenticatedUserDropdown(_ref) {
   }), /*#__PURE__*/React.createElement("span", {
     "data-hj-suppress": true,
     className: "d-none d-md-inline"
-  }, username)), /*#__PURE__*/React.createElement(Dropdown.Menu, {
+  }, name)), /*#__PURE__*/React.createElement(Dropdown.Menu, {
     className: "dropdown-menu-right"
   }, dashboardMenuItem, /*#__PURE__*/React.createElement(Dropdown.Item, {
     href: "".concat(getConfig().ACCOUNT_PROFILE_URL, "/u/").concat(username)
@@ -40,6 +41,7 @@ var AuthenticatedUserDropdown = function AuthenticatedUserDropdown(_ref) {
 };
 AuthenticatedUserDropdown.propTypes = {
   intl: intlShape.isRequired,
+  name: PropTypes.string.isRequired,
   username: PropTypes.string.isRequired
 };
 export default injectIntl(AuthenticatedUserDropdown);
