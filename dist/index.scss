@@ -124,3 +124,82 @@ body {
     border-radius: $rounded-pill;
   }
 }
+
+
+// Profile Page CSS
+
+.page__account-settings {
+  padding-top: 0px !important;
+
+  > h1 {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    padding-left: 23px;
+    background-color: #F9FAFA;
+    font-size: 30px;
+  }
+
+  .jump-nav {
+    a {
+      overflow: hidden;
+      color: var(--systematic-colors-shades-of-grey-800, #1A2029);
+      text-overflow: ellipsis;
+      font-family: Hind;
+      font-size: 1.125rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 24px;
+      text-decoration: none !important;
+
+      &::before {
+        content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M5 11H19V13H5V11Z' fill='%23434C59'%3E%3C/path%3E%3C/svg%3E");
+        margin-right: 5px;
+        vertical-align: middle;
+      }
+    }
+  }
+
+  div#basic-information,
+  #profile-information,
+  #social-media,
+  #site-preferences,
+  #linked-accounts,
+  #delete-account {
+    border-radius: 8px;
+    border: 1px solid var(--systematic-colors-shades-of-grey-200, #C8CACC);
+    padding: 24px !important;
+  }
+
+  .account-section {
+    p {
+      color: var(--systematic-colors-shades-of-grey-400, #6D7076);
+    }
+  }
+
+  .form-group,
+  .h6 {
+    h6 {
+      font-size: 1.125rem;
+      font-weight: normal;
+    }
+  }
+
+  .pgn__form-control-decorator-group {
+    margin-top: 10px;
+  }
+
+  .btn-primary {
+    border-radius: 4px;
+    background: var(--brand-primary-500, #434C59);
+  }
+
+  .btn-outline-primary {
+    border-color: #434C59;
+    color: #434C59;
+  }
+}
+
+a.nav-link:hover {
+  background-color: #fff !important;
+  color: #000 !important;
+}
