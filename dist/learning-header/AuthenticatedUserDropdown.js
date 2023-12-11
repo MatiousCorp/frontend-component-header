@@ -19,24 +19,24 @@ var AuthenticatedUserDropdown = function AuthenticatedUserDropdown(_ref) {
   }, intl.formatMessage(messages.help)), /*#__PURE__*/React.createElement(Dropdown, {
     className: "user-dropdown"
   }, /*#__PURE__*/React.createElement(Dropdown.Toggle, {
-    variant: "outline-primary"
+    variant: "outline-primary",
+    className: "border-0"
   }, /*#__PURE__*/React.createElement(FontAwesomeIcon, {
     icon: faUserCircle,
-    className: "d-md-none",
-    size: "lg"
+    className: "mr-3",
+    size: "xl"
   }), /*#__PURE__*/React.createElement("span", {
     "data-hj-suppress": true,
-    className: "d-none d-md-inline"
+    className: "d-none d-md-inline mr-2 font-weight-bold"
   }, name)), /*#__PURE__*/React.createElement(Dropdown.Menu, {
     className: "dropdown-menu-right"
   }, dashboardMenuItem, /*#__PURE__*/React.createElement(Dropdown.Item, {
-    href: "".concat(getConfig().ACCOUNT_PROFILE_URL, "/u/").concat(username)
-  }, intl.formatMessage(messages.profile)), /*#__PURE__*/React.createElement(Dropdown.Item, {
     href: getConfig().ACCOUNT_SETTINGS_URL
   }, intl.formatMessage(messages.account)), getConfig().ORDER_HISTORY_URL && /*#__PURE__*/React.createElement(Dropdown.Item, {
     href: getConfig().ORDER_HISTORY_URL
   }, intl.formatMessage(messages.orderHistory)), /*#__PURE__*/React.createElement(Dropdown.Item, {
-    href: getConfig().LOGOUT_URL
+    href: getConfig().LOGOUT_URL,
+    className: "text-danger font-weight-bold"
   }, intl.formatMessage(messages.signOut)))));
 };
 AuthenticatedUserDropdown.propTypes = {

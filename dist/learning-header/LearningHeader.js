@@ -36,6 +36,7 @@ var LearningHeader = function LearningHeader(_ref2) {
     showUserDropdown = _ref2.showUserDropdown;
   var _useContext = useContext(AppContext),
     authenticatedUser = _useContext.authenticatedUser;
+  console.log(authenticatedUser);
   var headerLogo = /*#__PURE__*/React.createElement(LinkedLogo, {
     className: "logo",
     href: "".concat(getConfig().LMS_BASE_URL, "/dashboard"),
