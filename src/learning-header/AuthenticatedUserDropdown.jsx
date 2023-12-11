@@ -21,17 +21,14 @@ const AuthenticatedUserDropdown = ({ intl, username, name }) => {
     <>
       <a className="text-gray-700 mr-3" href={`${getConfig().SUPPORT_URL}`}>{intl.formatMessage(messages.help)}</a>
       <Dropdown className="user-dropdown">
-        <Dropdown.Toggle variant="outline-primary">
-          <FontAwesomeIcon icon={faUserCircle} className="d-md-none" size="lg" />
-          <span data-hj-suppress className="d-none d-md-inline">
+        <Dropdown.Toggle variant="outline-primary" className="border-0">
+          <FontAwesomeIcon icon={faUserCircle} className="mr-3" size="xl" />
+          <span data-hj-suppress className="d-none d-md-inline mr-2 font-weight-bold">
             {name}
           </span>
         </Dropdown.Toggle>
         <Dropdown.Menu className="dropdown-menu-right">
           {dashboardMenuItem}
-          <Dropdown.Item href={`${getConfig().ACCOUNT_PROFILE_URL}/u/${username}`}>
-            {intl.formatMessage(messages.profile)}
-          </Dropdown.Item>
           <Dropdown.Item href={getConfig().ACCOUNT_SETTINGS_URL}>
             {intl.formatMessage(messages.account)}
           </Dropdown.Item>
@@ -40,7 +37,7 @@ const AuthenticatedUserDropdown = ({ intl, username, name }) => {
               {intl.formatMessage(messages.orderHistory)}
             </Dropdown.Item>
           )}
-          <Dropdown.Item href={getConfig().LOGOUT_URL}>
+          <Dropdown.Item href={getConfig().LOGOUT_URL} className="text-danger font-weight-bold">
             {intl.formatMessage(messages.signOut)}
           </Dropdown.Item>
         </Dropdown.Menu>
