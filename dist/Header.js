@@ -33,10 +33,6 @@ var Header = function Header(_ref) {
     content: intl.formatMessage(messages['header.user.menu.dashboard'])
   }, {
     type: 'item',
-    href: "".concat(config.ACCOUNT_PROFILE_URL, "/u/").concat(authenticatedUser.username),
-    content: intl.formatMessage(messages['header.user.menu.profile'])
-  }, {
-    type: 'item',
     href: config.ACCOUNT_SETTINGS_URL,
     content: intl.formatMessage(messages['header.user.menu.account.settings'])
   }, {

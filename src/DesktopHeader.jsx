@@ -86,10 +86,13 @@ class DesktopHeader extends React.Component {
         <MenuTrigger
           tag="button"
           aria-label={intl.formatMessage(messages['header.label.account.menu.for'], { username })}
-          className="btn btn-outline-primary d-inline-flex align-items-center pl-2 pr-3"
+          className="btn btn-outline-primary d-inline-flex align-items-center pl-2 pr-3 border-0"
         >
           <Avatar size="1.5em" src={avatar} alt="" className="mr-2" />
-          {name} <CaretIcon role="img" aria-hidden focusable="false" />
+          <span className="d-none d-md-inline mr-2 font-weight-bold">
+            {name}
+          </span>
+          <CaretIcon role="img" aria-hidden focusable="false" />
         </MenuTrigger>
         <MenuContent className="mb-0 dropdown-menu show dropdown-menu-right pin-right shadow py-2">
           {userMenu.map(({ type, href, content }) => (

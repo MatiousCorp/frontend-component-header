@@ -122,13 +122,15 @@ var DesktopHeader = /*#__PURE__*/function (_React$Component) {
         "aria-label": intl.formatMessage(messages['header.label.account.menu.for'], {
           username: username
         }),
-        className: "btn btn-outline-primary d-inline-flex align-items-center pl-2 pr-3"
+        className: "btn btn-outline-primary d-inline-flex align-items-center pl-2 pr-3 border-0"
       }, /*#__PURE__*/React.createElement(Avatar, {
         size: "1.5em",
         src: avatar,
         alt: "",
         className: "mr-2"
-      }), name, " ", /*#__PURE__*/React.createElement(CaretIcon, {
+      }), /*#__PURE__*/React.createElement("span", {
+        className: "d-none d-md-inline mr-2 font-weight-bold"
+      }, name), /*#__PURE__*/React.createElement(CaretIcon, {
         role: "img",
         "aria-hidden": true,
         focusable: "false"
