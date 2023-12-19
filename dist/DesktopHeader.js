@@ -112,6 +112,7 @@ var DesktopHeader = /*#__PURE__*/function (_React$Component) {
         userMenu = _this$props.userMenu,
         avatar = _this$props.avatar,
         username = _this$props.username,
+        name = _this$props.name,
         intl = _this$props.intl;
       return /*#__PURE__*/React.createElement(Menu, {
         transitionClassName: "menu-dropdown",
@@ -127,7 +128,7 @@ var DesktopHeader = /*#__PURE__*/function (_React$Component) {
         src: avatar,
         alt: "",
         className: "mr-2"
-      }), username, " ", /*#__PURE__*/React.createElement(CaretIcon, {
+      }), name, " ", /*#__PURE__*/React.createElement(CaretIcon, {
         role: "img",
         "aria-hidden": true,
         focusable: "false"
@@ -218,6 +219,7 @@ DesktopHeader.propTypes = {
   logoDestination: PropTypes.string,
   avatar: PropTypes.string,
   username: PropTypes.string,
+  name: PropTypes.string,
   loggedIn: PropTypes.bool,
   // i18n
   intl: intlShape.isRequired,
@@ -240,6 +242,7 @@ DesktopHeader.defaultProps = {
   logoDestination: null,
   avatar: null,
   username: null,
+  name: null,
   loggedIn: false,
   appMenu: null
 };
